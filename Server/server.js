@@ -20,7 +20,7 @@ const apiLimited = rateLimit({
   message: "Too Many Request from this IP, please try again after 15 mins",
 });
 
-const clientBuildPath = path.join(__dirname, "../client/dist");
+const clientBuildPath = path.join(__dirname, "../Client/dist");
 app.use(express.static(clientBuildPath));
 
 connectDB();
